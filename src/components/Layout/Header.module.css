@@ -1,0 +1,48 @@
+.header {
+  background-image: url("../../asset/house7.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 80vh;
+  width: 100vw;
+  padding: 1rem;
+  position: relative;
+}
+.formbox {
+  width: 60%;
+  position: absolute;
+  bottom: 40%;
+  left: 5%;
+}
+.h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+/* 992px */
+@media screen and (max-width: 1200px) {
+  .h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .formbox {
+    width: 85%;
+    bottom: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 60vh;
+  }
+  .formbox {
+    width: 100%;
+    bottom: 20%;
+  }
+  .h1 {
+    font-size: 1.8rem;
+    left: 1%;
+  }
+}
