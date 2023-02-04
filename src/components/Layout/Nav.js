@@ -1,19 +1,20 @@
-import { useState } from "react";
+import { useState} from "react";
 import logo from "../../asset/LOGONAME.png";
 import Burger from "../Burger";
 import classes from "./Nav.module.css";
 
-const Nav = () => {
-  const [open, setOpen] = useState('')
+const Nav = (props) => {
+
+  const [open, setOpen] = useState("");
   const clickHandler = (click) => {
-   setOpen(click);
+    setOpen(click);
   };
 
   return (
     <>
-      <nav className={classes.nav}>
+      <nav  className={`${classes.nav} ${props.onVisible && classes.stickyNav}`}>
         <img className={classes.logo} src={logo} alt="kardaclan logo" />
-        <ul className={`${classes.list} ${!open && classes.listdisplay }`}>
+        <ul className={`${classes.list} ${!open && classes.listdisplay}`}>
           <li className={classes.item}>
             <a className={classes.link} href="/">
               home

@@ -1,0 +1,16 @@
+.about {
+  background-color: #fff;
+  margin-bottom: 6rem;
+}
+.heading {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.pbox {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.para {
+  font-size: 1.8rem;
+}

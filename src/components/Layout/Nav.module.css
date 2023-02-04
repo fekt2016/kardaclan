@@ -1,6 +1,6 @@
 .nav {
-  margin: 1rem 8%;
-  position: relative;
+  width: 100vw;
+  padding: 0 5%;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -10,6 +10,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+}
+.stickyNav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #fff;
 }
 .navdisplay {
   position: fixed;
@@ -18,21 +25,17 @@
   flex-direction: column;
 }
 .logo {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 5rem;
+  height: 5rem;
 }
 .list {
-  position: absolute;
-  right: 2rem;
   display: flex;
-  justify-content: flex-end;
-  flex: 1;
-  background-color: #fff;
+  gap: 10px;
 }
 
 .item {
   list-style: none;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
   padding-bottom: 0.5rem;
   position: relative;
 }
@@ -58,7 +61,7 @@
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -71,15 +74,16 @@
 
 @media screen and (max-width: 768px) {
   .nav {
-    margin-right: 0;
+    display: flex;
+    align-items: flex-start;
   }
   .list {
     flex-direction: column;
     top: 0;
     right: 0;
-    width: 80%;
     height: 100vh;
     justify-content: flex-start;
+    align-items: end;
     padding-top: 2rem;
     z-index: 20;
   }

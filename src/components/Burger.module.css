@@ -6,7 +6,7 @@
   z-index: 1000;
   display: none;
   margin-top: 1rem;
-  margin-right: 5%;
+  /* margin-right: 5%; */
 
 }
 .icon {
@@ -24,7 +24,7 @@
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
-  transform-origin: 8.5px;
+  transform-origin: -1px;
 }
 
 .icon1 {

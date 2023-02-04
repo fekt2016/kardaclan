@@ -1,0 +1,89 @@
+.finding {
+  width: 100vw;
+  padding: 2rem;
+  margin-bottom: 6rem;
+}
+.headerbox {
+  width: 70%;
+
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.headerbox h2 {
+  font-size: 3.5rem;
+}
+.headerbox p {
+  font-size: 1.6rem;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  .finding {
+    padding: 1.5rem;
+  }
+  .headerbox h2 {
+    font-size: 3rem;
+  }
+  .headerbox p {
+    font-size: 1.4rem;
+  }
+
+  .imgbox {
+    width: 100%;
+  }
+  .h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .container-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerbox h2 {
+    font-size: 2.5rem;
+  }
+  .headerbox p {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 30em;
+    margin-bottom: 4rem;
+
+  }
+  .imgbox {
+    height: 20rem;
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 530px){
+  .headerbox h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .headerbox h2 {
+    font-size: 1.6rem;
+  }
+  .headerbox p {
+    font-size: 1rem;
+  }
+}
