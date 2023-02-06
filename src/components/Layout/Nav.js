@@ -2,6 +2,7 @@ import { useState} from "react";
 import logo from "../../asset/LOGONAME.png";
 import Burger from "../Burger";
 import classes from "./Nav.module.css";
+import {Link} from 'react-router-dom';
 
 const Nav = (props) => {
 
@@ -16,34 +17,34 @@ const Nav = (props) => {
         <img className={classes.logo} src={logo} alt="kardaclan logo" />
         <ul className={`${classes.list} ${!open && classes.listdisplay}`}>
           <li className={classes.item}>
-            <a className={classes.link} href="/">
+            <Link className={classes.link} to="/">
               home
-            </a>
+            </Link>
           </li>
           <li className={classes.item}>
-            <a className={classes.link} href="/">
+            <Link className={classes.link} to="/aboutus">
               about
-            </a>
+            </Link>
           </li>
           <li className={classes.item}>
-            <a className={classes.link} href="/">
+            <Link className={classes.link} to="/project">
               Project
-            </a>
+            </Link>
           </li>
           <li className={classes.item}>
-            <a className={classes.link} href="/">
+            <Link className={classes.link} to="/media">
               Media
-            </a>
+            </Link>
           </li>
           <li className={classes.item}>
-            <a className={classes.link} href="/">
-              mortagage
-            </a>
+            <Link className={classes.link} to="/mortgage">
+              mortgage
+            </Link>
           </li>
           <li className={classes.item}>
-            <a className={classes.link} href="/">
+            <Link className={classes.link} to="/contact">
               contact
-            </a>
+            </Link>
           </li>
         </ul>
         <Burger onClickHandler={clickHandler} />
