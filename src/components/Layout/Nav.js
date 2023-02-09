@@ -1,11 +1,10 @@
-import { useState} from "react";
+import { useState } from "react";
 import logo from "../../asset/LOGONAME.png";
 import Burger from "../Burger";
 import classes from "./Nav.module.css";
-import {Link} from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const Nav = (props) => {
-
   const [open, setOpen] = useState("");
   const clickHandler = (click) => {
     setOpen(click);
@@ -13,38 +12,69 @@ const Nav = (props) => {
 
   return (
     <>
-      <nav  className={`${classes.nav} ${props.onVisible && classes.stickyNav}`}>
+      <nav className={`${classes.nav} ${props.onVisible && classes.stickyNav}`}>
         <img className={classes.logo} src={logo} alt="kardaclan logo" />
         <ul className={`${classes.list} ${!open && classes.listdisplay}`}>
           <li className={classes.item}>
-            <Link className={classes.link} to="/">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+              end
+            >
               home
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <Link className={classes.link} to="/aboutus">
+            <NavLink
+              to="/aboutus"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
               about
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <Link className={classes.link} to="/project">
+            <NavLink
+              to="/project"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
               Project
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <Link className={classes.link} to="/media">
+            <NavLink
+              to="/media"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
               Media
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <Link className={classes.link} to="/mortgage">
+            <NavLink
+              to="/mortgage"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
               mortgage
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <Link className={classes.link} to="/contact">
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
               contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <Burger onClickHandler={clickHandler} />

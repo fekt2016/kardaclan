@@ -14,11 +14,11 @@ const Footer = () => {
         <div className={classes.left}>
           <img className={classes.logo} src={logo} alt="footer logo" />
           <div className={classes.social}>
-            <IconFacebook color="#3b5998" width="48px" />
-            <IconInstagram color="#d62976" />
-            <IconWhatsapp color="#075e54" />
-            <IconTwitter color="#00acee" />
-            <IconYoutube color="c4302b" />
+            <IconFacebook color="#3b5998" width="32px" height="32px"/>
+            <IconInstagram color="#d62976" width="32px" height="32px" />
+            <IconWhatsapp color="#075e54" width="32px" height="32px"/>
+            <IconTwitter color="#00acee" width="32px" height="32px"/>
+            <IconYoutube color="c4302b" width="32px" height="32px"/>
           </div>
         </div>
         <div className={classes.right}>
